@@ -27,8 +27,6 @@
       description="[[session.description]]"
       image="[[session.speakers.0.photoUrl]]"
       active="[[opened]]"
-      label1="{$ time $}"
-      data1="[[session.dateReadable]], [[session.startTime]] - [[session.endTime]]"
       label2="{$ sessionDetails.contentLevel $}"
       data2="[[session.complexity]]"
     ></polymer-helmet>
@@ -68,8 +66,6 @@
             on-tap="_toggleFeaturedSession"
           ></paper-fab>
         </div>
-        <h3 class="meta-info" hidden$="[[disabledSchedule]]">[[session.dateReadable]], [[session.startTime]] - [[session.endTime]]</h3>
-        <h3 class="meta-info" hidden$="[[disabledSchedule]]">[[session.track.title]]</h3>
         <h3 class="meta-info" hidden$="[[!session.complexity]]">{$ sessionDetails.contentLevel $}:
           [[session.complexity]]</h3>
 

@@ -1,7 +1,7 @@
 ### 1. Purpose
 
-A primary goal of [GDG Lviv](http://lviv.gdg.org.ua/) is to be inclusive to the largest number of contributors, with the most varied and diverse backgrounds possible. As such, we are committed to providing a friendly, safe and welcoming environment for all, regardless of gender, sexual orientation, ability, ethnicity, socioeconomic status, and religion (or lack thereof). 
-GDG Lviv prides itself on being an open, respectful, and inclusive community. That means the [jerky behavior](https://meta.wikimedia.org/wiki/Don%27t_be_a_jerk) isn’t allowed at GDG meetings.
+A primary goal of GDG Nizhny Novgorod is to be inclusive to the largest number of contributors, with the most varied and diverse backgrounds possible. As such, we are committed to providing a friendly, safe and welcoming environment for all, regardless of gender, sexual orientation, ability, ethnicity, socioeconomic status, and religion (or lack thereof). 
+GDG Nizhny Novgorod prides itself on being an open, respectful, and inclusive community. That means the [jerky behavior](https://meta.wikimedia.org/wiki/Don%27t_be_a_jerk) isn’t allowed at GDG meetings.
 
 This code of conduct outlines our expectations for all those who participate in our community, as well as the consequences for unacceptable behavior.
 We invite all those who participate in Google Developers Group to help us create safe and positive experiences for everyone.
@@ -40,7 +40,7 @@ The following actions are considered harassment and are unacceptable within our 
 
 Unacceptable behavior from any community member, including sponsors and those with decision-making authority, will not be tolerated.
 Anyone asked to stop unacceptable behavior is expected to comply immediately.
-If a community member engages in unacceptable behavior, the community organizers may take any action they deem appropriate, up to and including a temporary ban or permanent expulsion from the community without warning (and without refund in the case of a paid event.
+If a community member engages in unacceptable behavior, the community organizers may take any action they deem appropriate, up to and including a temporary ban or permanent expulsion from the community without warning (and without refund in the case of a paid event).
 
 ### 6. Scope
 
@@ -48,5 +48,5 @@ We expect all community participants to abide by this Code of Conduct in all com
 
 ### 7. Contact info
 
-- Oleh Zasadnyy, +38 093 486 64 60, [o.zasadnyy@gdg.org.ua](mailto:o.zasadnyy@gdg.org.ua)
-- Sofiya Huts, +38 093 486 14 25, [s.huts@gdg.org.ua](mailto:s.huts@gdg.org.ua)
+- Aleksandr Denisov, +7 905 661 90 83, [denisov.shureg@gmail.com](mailto:denisov.shureg@gmail.com)
+- Ekaterina Vinnichenko, +7 910 140 56 64, [vertigo1004@gmail.com](mailto:vertigo1004@gmail.com)

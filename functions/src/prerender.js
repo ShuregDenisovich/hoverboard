@@ -43,11 +43,15 @@ const checkForBots = (userAgent) => {
 // The trick is on L66, pwaShell(): You must update that file! Open for explainer.
 app.get('*', (req, res) => {
   // What say you bot tester?
+  console.log('ALDE LOG');
   const botResult = checkForBots(req.headers['user-agent']);
+  console.log(botResult);
   if (botResult) {
     // Get me the url all nice
     const targetUrl = generateUrl(req);
-
+	
+	console.log(targetUrl);
+	console.log(functions.config().rendertron.server);
     // Did you read the README? You should have set functions.config().rendertron.server
     // to where ever you deployed https://github.com/GoogleChrome/rendertron on AppEngine
     fetch(`${functions.config().rendertron.server}/render/${targetUrl}`)

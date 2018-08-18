@@ -24,6 +24,29 @@ const importSpeakers = () => {
     });
 };
 
+const importSubscribers = () => {
+  const subscribers = data.subscribers;
+  console.log('\tImporting', Object.keys(subscribers).length, 'subscribers...');
+
+  const batch = firestore.batch();
+
+  Object.keys(subscribers).forEach((subscriberId, order) => {
+    batch.set(
+      firestore.collection('subscribers').doc(subscriberId),
+      {
+        ...subscribers[subscriberId],
+        order,
+      },
+    );
+  });
+
+  return batch.commit()
+    .then((results) => {
+      console.log('\tImported data for', results.length, 'subscribers');
+      return results;
+    });
+};
+
 const importPreviousSpeakers = () => {
   const previousSpeakers = data.previousSpeakers;
   console.log('\tImporting', Object.keys(previousSpeakers).length, 'previous speakers...');
@@ -252,17 +275,14 @@ const importNotificationsConfig = async () => {
 };
 
 initializeFirebase()
-  .then(() => importBlog())
   .then(() => importGallery())
   .then(() => importNotificationsConfig())
   .then(() => importPartners())
-  .then(() => importPreviousSpeakers())
-  .then(() => importSchedule())
   .then(() => importSessions())
   .then(() => importSpeakers())
+  .then(() => importSubscribers())
   .then(() => importTeam())
   .then(() => importTickets())
-  .then(() => importVideos())
 
   .then(() => {
     console.log('Finished');

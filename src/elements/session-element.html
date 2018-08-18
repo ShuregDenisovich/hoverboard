@@ -166,12 +166,6 @@
 
       <div class="session-footer">
         <div layout horizontal justified center-aligned>
-          <div class="session-meta" flex>
-            <span
-              hidden$="[[!session.duration.hh]]">[[session.duration.hh]] hour[[_getEnding(session.duration.hh)]]</span>
-            <span
-              hidden$="[[!session.duration.mm]]">[[session.duration.mm]] min[[_getEnding(session.duration.mm)]]</span>
-          </div>
           <div hidden$="[[!session.tags.length]]">
             <template is="dom-repeat" items="[[session.tags]]" as="tag">
               <span class="tag" style$="color: [[_getTagColor(tag)]]">[[tag]]</span>

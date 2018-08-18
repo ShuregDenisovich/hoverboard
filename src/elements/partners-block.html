@@ -16,6 +16,7 @@
 
       :host {
         display: block;
+		text-align: center;			 
       }
 
       .block-title {
@@ -61,7 +62,7 @@
 
       <template is="dom-repeat" items="[[partners]]" as="block">
           <h4 class="block-title">[[block.title]]</h4>
-          <div class="logos-wrapper">
+          <div class="logos-wrapper" layout horizontal flex center-center>
             <template is="dom-repeat" items="[[block.items]]" as="logo">
               <a
                 class="logo-item card"
@@ -69,7 +70,7 @@
                 title$="[[logo.name]]"
                 target="_blank"
                 rel="noopener noreferrer"
-                layout horizontal center-center
+                layout horizontal flex center-center
               >
                 <plastic-image
                   class="logo-img"
@@ -83,8 +84,8 @@
           </div>
       </template>
 
-      <paper-button class="cta-button animated icon-right"
-        on-tap="_addPotentialPartner">
+      <a href="{$  becomePartnerLink $}" target="_blank"><paper-button class="cta-button animated icon-right">
+        
         <span>{$ partnersBlock.button $}</span>
         <iron-icon icon="hoverboard:arrow-right-circle"></iron-icon>
       </paper-button>
